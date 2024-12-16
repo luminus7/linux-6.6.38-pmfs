@@ -1,0 +1,555 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/syslab/workspace_luma/Odinfs/fs/pmfs/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+CACHELINE_ALIGN	./journal.h	/^#define CACHELINE_ALIGN(/;"	d
+CACHELINE_ALIGN	./pmfs_def.h	/^#define CACHELINE_ALIGN(/;"	d
+CACHELINE_MASK	./journal.h	/^#define CACHELINE_MASK /;"	d
+CACHELINE_MASK	./pmfs_def.h	/^#define CACHELINE_MASK /;"	d
+CACHELINE_SIZE	./journal.h	/^#define CACHELINE_SIZE /;"	d
+CACHELINE_SIZE	./pmfs_def.h	/^#define CACHELINE_SIZE /;"	d
+CLINE_SHIFT	./journal.h	/^#define CLINE_SHIFT	/;"	d
+CONFIG_PMFS	./Kconfig	/^config PMFS$/;"	c
+CONFIG_PMFS_TEST	./Kconfig	/^config PMFS_TEST$/;"	c
+CONFIG_PMFS_TEST_MODULE	./Kconfig	/^config PMFS_TEST_MODULE$/;"	c
+CONFIG_PMFS_WRITE_PROTECT	./Kconfig	/^config PMFS_WRITE_PROTECT$/;"	c
+CONFIG_PMFS_XIP	./Kconfig	/^config PMFS_XIP$/;"	c
+Countstats_pmfs	./pmfs_stats.c	/^unsigned long Countstats_pmfs[TIMING_NUM];$/;"	v	typeref:typename:unsigned long[]
+DT2IF	./dir.c	/^#define DT2IF(/;"	d	file:
+FS_PMFS_FSYNC	./ioctl.c	/^#define	FS_PMFS_FSYNC	/;"	d	file:
+IF2DT	./dir.c	/^#define IF2DT(/;"	d	file:
+INODES_PER_BLOCK	./pmfs.h	/^#define INODES_PER_BLOCK(/;"	d
+LESIZE_SHIFT	./journal.h	/^#define LESIZE_SHIFT /;"	d
+LE_ABORT	./journal.h	/^#define LE_ABORT /;"	d
+LE_COMMIT	./journal.h	/^#define LE_COMMIT /;"	d
+LE_DATA	./journal.h	/^#define LE_DATA /;"	d
+LE_START	./journal.h	/^#define LE_START /;"	d
+LOGENTRY_SIZE	./journal.h	/^#define LOGENTRY_SIZE /;"	d
+MAX_DATA_PER_LENTRY	./journal.h	/^#define MAX_DATA_PER_LENTRY /;"	d
+MAX_DIRENTRY_LENTRIES	./journal.h	/^#define MAX_DIRENTRY_LENTRIES /;"	d
+MAX_GEN_ID	./journal.h	/^#define MAX_GEN_ID /;"	d
+MAX_INODE_LENTRIES	./journal.h	/^#define MAX_INODE_LENTRIES /;"	d
+MAX_METABLOCK_LENTRIES	./journal.h	/^#define MAX_METABLOCK_LENTRIES /;"	d
+MAX_PTRS_PER_LENTRY	./journal.h	/^#define MAX_PTRS_PER_LENTRY /;"	d
+MAX_SB_LENTRIES	./journal.h	/^#define MAX_SB_LENTRIES /;"	d
+MAX_TRUNCATE_LENTRIES	./journal.h	/^#define MAX_TRUNCATE_LENTRIES /;"	d
+META_BLK_SHIFT	./pmfs_def.h	/^#define META_BLK_SHIFT /;"	d
+Opt_blocksize	./super.c	/^	Opt_gid, Opt_blocksize, Opt_wprotect, Opt_wprotectold,$/;"	e	enum:__anonee07d0620103	file:
+Opt_bpi	./super.c	/^	Opt_bpi, Opt_init, Opt_jsize,$/;"	e	enum:__anonee07d0620103	file:
+Opt_bs	./super.c	/^	Opt_hugemmap, Opt_nohugeioremap, Opt_dbgmask, Opt_bs, Opt_err$/;"	e	enum:__anonee07d0620103	file:
+Opt_dbgmask	./super.c	/^	Opt_hugemmap, Opt_nohugeioremap, Opt_dbgmask, Opt_bs, Opt_err$/;"	e	enum:__anonee07d0620103	file:
+Opt_err	./super.c	/^	Opt_hugemmap, Opt_nohugeioremap, Opt_dbgmask, Opt_bs, Opt_err$/;"	e	enum:__anonee07d0620103	file:
+Opt_err_cont	./super.c	/^	Opt_err_cont, Opt_err_panic, Opt_err_ro,$/;"	e	enum:__anonee07d0620103	file:
+Opt_err_panic	./super.c	/^	Opt_err_cont, Opt_err_panic, Opt_err_ro,$/;"	e	enum:__anonee07d0620103	file:
+Opt_err_ro	./super.c	/^	Opt_err_cont, Opt_err_panic, Opt_err_ro,$/;"	e	enum:__anonee07d0620103	file:
+Opt_gid	./super.c	/^	Opt_gid, Opt_blocksize, Opt_wprotect, Opt_wprotectold,$/;"	e	enum:__anonee07d0620103	file:
+Opt_hugemmap	./super.c	/^	Opt_hugemmap, Opt_nohugeioremap, Opt_dbgmask, Opt_bs, Opt_err$/;"	e	enum:__anonee07d0620103	file:
+Opt_init	./super.c	/^	Opt_bpi, Opt_init, Opt_jsize,$/;"	e	enum:__anonee07d0620103	file:
+Opt_jsize	./super.c	/^	Opt_bpi, Opt_init, Opt_jsize,$/;"	e	enum:__anonee07d0620103	file:
+Opt_mode	./super.c	/^	Opt_num_inodes, Opt_mode, Opt_uid,$/;"	e	enum:__anonee07d0620103	file:
+Opt_nohugeioremap	./super.c	/^	Opt_hugemmap, Opt_nohugeioremap, Opt_dbgmask, Opt_bs, Opt_err$/;"	e	enum:__anonee07d0620103	file:
+Opt_num_inodes	./super.c	/^	Opt_num_inodes, Opt_mode, Opt_uid,$/;"	e	enum:__anonee07d0620103	file:
+Opt_uid	./super.c	/^	Opt_num_inodes, Opt_mode, Opt_uid,$/;"	e	enum:__anonee07d0620103	file:
+Opt_wprotect	./super.c	/^	Opt_gid, Opt_blocksize, Opt_wprotect, Opt_wprotectold,$/;"	e	enum:__anonee07d0620103	file:
+Opt_wprotectold	./super.c	/^	Opt_gid, Opt_blocksize, Opt_wprotect, Opt_wprotectold,$/;"	e	enum:__anonee07d0620103	file:
+PAGE_SHIFT_1G	./pmfs.h	/^#define PAGE_SHIFT_1G /;"	d
+PAGE_SHIFT_2M	./pmfs.h	/^#define PAGE_SHIFT_2M /;"	d
+PERSISTENT_BARRIER	./pmfs_def.h	/^static inline void PERSISTENT_BARRIER(void)$/;"	f	typeref:typename:void
+PERSISTENT_MARK	./pmfs_def.h	/^static inline void PERSISTENT_MARK(void)$/;"	f	typeref:typename:void
+PMFS	./Kconfig	/^config PMFS$/;"	c
+PMFS_ASSERT	./pmfs.h	/^#define PMFS_ASSERT(/;"	d
+PMFS_BLOCKNODE_IN0	./pmfs_def.h	/^#define PMFS_BLOCKNODE_IN0 /;"	d
+PMFS_BLOCK_TYPE_1G	./pmfs_def.h	/^#define PMFS_BLOCK_TYPE_1G /;"	d
+PMFS_BLOCK_TYPE_2M	./pmfs_def.h	/^#define PMFS_BLOCK_TYPE_2M /;"	d
+PMFS_BLOCK_TYPE_4K	./pmfs_def.h	/^#define PMFS_BLOCK_TYPE_4K /;"	d
+PMFS_BLOCK_TYPE_MAX	./pmfs_def.h	/^#define PMFS_BLOCK_TYPE_MAX /;"	d
+PMFS_CLEAR_STATS	./pmfs.h	/^#define	PMFS_CLEAR_STATS	/;"	d
+PMFS_DBGMASK_MMAP4K	./pmfs.h	/^#define PMFS_DBGMASK_MMAP4K /;"	d
+PMFS_DBGMASK_MMAPHUGE	./pmfs.h	/^#define PMFS_DBGMASK_MMAPHUGE /;"	d
+PMFS_DBGMASK_MMAPVERBOSE	./pmfs.h	/^#define PMFS_DBGMASK_MMAPVERBOSE /;"	d
+PMFS_DBGMASK_MMAPVVERBOSE	./pmfs.h	/^#define PMFS_DBGMASK_MMAPVVERBOSE /;"	d
+PMFS_DBGMASK_TRANSACTION	./pmfs.h	/^#define PMFS_DBGMASK_TRANSACTION /;"	d
+PMFS_DBGMASK_VERBOSE	./pmfs.h	/^#define PMFS_DBGMASK_VERBOSE /;"	d
+PMFS_DEFAULT_BLOCK_TYPE	./pmfs_def.h	/^#define PMFS_DEFAULT_BLOCK_TYPE /;"	d
+PMFS_DEFAULT_JOURNAL_SIZE	./journal.h	/^#define PMFS_DEFAULT_JOURNAL_SIZE /;"	d
+PMFS_DEF_BLOCK_SIZE_4K	./pmfs_def.h	/^#define PMFS_DEF_BLOCK_SIZE_4K /;"	d
+PMFS_DIR_PAD	./pmfs_def.h	/^#define PMFS_DIR_PAD /;"	d
+PMFS_DIR_REC_LEN	./pmfs_def.h	/^#define PMFS_DIR_REC_LEN(/;"	d
+PMFS_DIR_ROUND	./pmfs_def.h	/^#define PMFS_DIR_ROUND /;"	d
+PMFS_END_TIMING	./pmfs.h	/^#define PMFS_END_TIMING(/;"	d
+PMFS_EOFBLOCKS_FL	./pmfs.h	/^#define PMFS_EOFBLOCKS_FL /;"	d
+PMFS_FAST_MOUNT_FIELD_SIZE	./pmfs_def.h	/^#define PMFS_FAST_MOUNT_FIELD_SIZE /;"	d
+PMFS_FL_INHERITED	./pmfs.h	/^#define PMFS_FL_INHERITED /;"	d
+PMFS_FL_USER_VISIBLE	./pmfs.h	/^#define PMFS_FL_USER_VISIBLE /;"	d
+PMFS_FREE_INODE_HINT_START	./pmfs_def.h	/^#define PMFS_FREE_INODE_HINT_START /;"	d
+PMFS_I	./pmfs.h	/^static inline struct pmfs_inode_info *PMFS_I(struct inode *inode)$/;"	f	typeref:struct:pmfs_inode_info *
+PMFS_INODE_BITS	./pmfs_def.h	/^#define PMFS_INODE_BITS /;"	d
+PMFS_INODE_SIZE	./pmfs_def.h	/^#define PMFS_INODE_SIZE /;"	d
+PMFS_LARGE_INODE_TABLE_SIZE	./pmfs.h	/^#define PMFS_LARGE_INODE_TABLE_SIZE /;"	d
+PMFS_LARGE_INODE_TABLE_THREASHOLD	./pmfs.h	/^#define PMFS_LARGE_INODE_TABLE_THREASHOLD /;"	d
+PMFS_LINK_MAX	./pmfs_def.h	/^#define PMFS_LINK_MAX /;"	d
+PMFS_MEMCPY_CHUNK_SIZE	./pmfs_def.h	/^#define PMFS_MEMCPY_CHUNK_SIZE /;"	d
+PMFS_MINIMUM_JOURNAL_SIZE	./journal.h	/^#define PMFS_MINIMUM_JOURNAL_SIZE /;"	d
+PMFS_MOUNT_ERRORS_CONT	./pmfs_def.h	/^#define PMFS_MOUNT_ERRORS_CONT /;"	d
+PMFS_MOUNT_ERRORS_PANIC	./pmfs_def.h	/^#define PMFS_MOUNT_ERRORS_PANIC /;"	d
+PMFS_MOUNT_ERRORS_RO	./pmfs_def.h	/^#define PMFS_MOUNT_ERRORS_RO /;"	d
+PMFS_MOUNT_FORMAT	./pmfs_def.h	/^#define PMFS_MOUNT_FORMAT /;"	d
+PMFS_MOUNT_HUGEIOREMAP	./pmfs_def.h	/^#define PMFS_MOUNT_HUGEIOREMAP /;"	d
+PMFS_MOUNT_HUGEMMAP	./pmfs_def.h	/^#define PMFS_MOUNT_HUGEMMAP /;"	d
+PMFS_MOUNT_MOUNTING	./pmfs_def.h	/^#define PMFS_MOUNT_MOUNTING /;"	d
+PMFS_MOUNT_POSIX_ACL	./pmfs_def.h	/^#define PMFS_MOUNT_POSIX_ACL /;"	d
+PMFS_MOUNT_PROTECT	./pmfs_def.h	/^#define PMFS_MOUNT_PROTECT /;"	d
+PMFS_MOUNT_PROTECT_OLD	./pmfs_def.h	/^#define PMFS_MOUNT_PROTECT_OLD /;"	d
+PMFS_MOUNT_XATTR_USER	./pmfs_def.h	/^#define PMFS_MOUNT_XATTR_USER /;"	d
+PMFS_MOUNT_XIP	./pmfs_def.h	/^#define PMFS_MOUNT_XIP /;"	d
+PMFS_NAME_LEN	./pmfs_def.h	/^#define PMFS_NAME_LEN /;"	d
+PMFS_OTHER_FLMASK	./pmfs.h	/^#define PMFS_OTHER_FLMASK /;"	d
+PMFS_PRINT_TIMING	./pmfs.h	/^#define	PMFS_PRINT_TIMING	/;"	d
+PMFS_REG_FLMASK	./pmfs.h	/^#define PMFS_REG_FLMASK /;"	d
+PMFS_ROOT_INO	./pmfs_def.h	/^#define PMFS_ROOT_INO /;"	d
+PMFS_SB	./pmfs.h	/^static inline struct pmfs_sb_info *PMFS_SB(struct super_block *sb)$/;"	f	typeref:struct:pmfs_sb_info *
+PMFS_SB_SIZE	./pmfs_def.h	/^#define PMFS_SB_SIZE /;"	d
+PMFS_SB_STATIC_SIZE	./pmfs_def.h	/^#define PMFS_SB_STATIC_SIZE(/;"	d
+PMFS_START_TIMING	./pmfs.h	/^#define PMFS_START_TIMING(/;"	d
+PMFS_SUPER_MAGIC	./pmfs_def.h	/^#define	PMFS_SUPER_MAGIC	/;"	d
+PMFS_TEST	./Kconfig	/^config PMFS_TEST$/;"	c
+PMFS_TEST_MODULE	./Kconfig	/^config PMFS_TEST_MODULE$/;"	c
+PMFS_WRITE_PROTECT	./Kconfig	/^config PMFS_WRITE_PROTECT$/;"	c
+PMFS_XIP	./Kconfig	/^config PMFS_XIP$/;"	c
+TIMING_NUM	./pmfs.h	/^	TIMING_NUM,$/;"	e	enum:timing_category
+TRANS_ABORTED	./journal.h	/^#define TRANS_ABORTED /;"	d
+TRANS_COMMITTED	./journal.h	/^#define TRANS_COMMITTED /;"	d
+TRANS_RUNNING	./journal.h	/^#define TRANS_RUNNING /;"	d
+Timingstats_pmfs	./pmfs_stats.c	/^unsigned long Timingstats_pmfs[TIMING_NUM];$/;"	v	typeref:typename:unsigned long[]
+Timingstring_pmfs	./pmfs_stats.c	/^const char *Timingstring_pmfs[TIMING_NUM] = $/;"	v	typeref:typename:const char * []
+X86_FEATURE_CLFLUSHOPT	./pmfs_def.h	/^#define X86_FEATURE_CLFLUSHOPT	/;"	d
+X86_FEATURE_CLWB	./pmfs_def.h	/^#define X86_FEATURE_CLWB	/;"	d
+X86_FEATURE_PCOMMIT	./pmfs_def.h	/^#define X86_FEATURE_PCOMMIT	/;"	d
+_LINUX_PMFS_DEF_H	./pmfs_def.h	/^#define _LINUX_PMFS_DEF_H$/;"	d
+__PMFS_H	./pmfs.h	/^#define __PMFS_H$/;"	d
+__PMFS_JOURNAL_H__	./journal.h	/^#define __PMFS_JOURNAL_H__$/;"	d
+__WPROTECT_H	./wprotect.h	/^#define __WPROTECT_H$/;"	d
+__anon8c5c7c730108	./journal.h	/^typedef struct {$/;"	s
+__anon99874bbc0108	./pmfs_def.h	/^	struct {$/;"	s	struct:pmfs_inode
+__anonee07d0620103	./super.c	/^enum {$/;"	g	file:
+__pmfs_alloc_blocks	./inode.c	/^int __pmfs_alloc_blocks(pmfs_transaction_t *trans, struct super_block *sb,$/;"	f	typeref:typename:int
+__pmfs_find_data_block	./pmfs.h	/^static inline u64 __pmfs_find_data_block(struct super_block *sb,$/;"	f	typeref:typename:u64
+__pmfs_free_block	./balloc.c	/^void __pmfs_free_block(struct super_block *sb, unsigned long blocknr,$/;"	f	typeref:typename:void
+__pmfs_free_blocknode	./super.c	/^void __pmfs_free_blocknode(struct pmfs_blocknode *bnode)$/;"	f	typeref:typename:void
+__pmfs_get_block	./xip.c	/^static inline int __pmfs_get_block(struct inode *inode, pgoff_t pgoff,$/;"	f	typeref:typename:int	file:
+__pmfs_memlock_range	./wprotect.h	/^__pmfs_memlock_range(void *p, unsigned long len)$/;"	f	typeref:typename:void
+__pmfs_memunlock_range	./wprotect.h	/^__pmfs_memunlock_range(void *p, unsigned long len)$/;"	f	typeref:typename:void
+__pmfs_truncate_blocks	./inode.c	/^static void __pmfs_truncate_blocks(struct inode *inode, loff_t start,$/;"	f	typeref:typename:void	file:
+__pmfs_xip_file_fault	./xip.c	/^static vm_fault_t __pmfs_xip_file_fault(struct vm_area_struct *vma,$/;"	f	typeref:typename:vm_fault_t	file:
+__pmfs_xip_file_write	./xip.c	/^__pmfs_xip_file_write(struct address_space *mapping, const char __user *buf,$/;"	f	typeref:typename:ssize_t	file:
+_mm_clflush	./pmfs_def.h	/^#define _mm_clflush(/;"	d
+_mm_clflushopt	./pmfs_def.h	/^#define _mm_clflushopt(/;"	d
+_mm_clwb	./pmfs_def.h	/^#define _mm_clwb(/;"	d
+_mm_pcommit	./pmfs_def.h	/^#define _mm_pcommit(/;"	d
+add_log_t	./pmfs.h	/^	add_log_t,$/;"	e	enum:timing_category
+addr_offset	./journal.h	/^	__le64   addr_offset;$/;"	m	struct:__anon8c5c7c730108	typeref:typename:__le64
+all	./Makefile	/^all:$/;"	t
+alloc_blocks_t	./pmfs.h	/^	alloc_blocks_t,$/;"	e	enum:timing_category
+arch_has_clwb	./pmfs_def.h	/^static inline bool arch_has_clwb(void)$/;"	f	typeref:typename:bool
+arch_has_pcommit	./pmfs_def.h	/^static inline bool arch_has_pcommit(void)$/;"	f	typeref:typename:bool
+base	./pmfs_def.h	/^	__le64     base;$/;"	m	struct:pmfs_journal	typeref:typename:__le64
+blk_type_to_shift_pmfs	./inode.c	/^unsigned int blk_type_to_shift_pmfs[PMFS_BLOCK_TYPE_MAX] = {12, 21, 30};$/;"	v	typeref:typename:unsigned int[]
+blk_type_to_size_pmfs	./inode.c	/^uint32_t blk_type_to_size_pmfs[PMFS_BLOCK_TYPE_MAX] = {0x1000, 0x200000, 0x40000000};$/;"	v	typeref:typename:uint32_t[]
+block_end	./pmfs.h	/^	unsigned long	block_end;$/;"	m	struct:pmfs_sb_info	typeref:typename:unsigned long
+block_high	./pmfs.h	/^	unsigned long block_high;$/;"	m	struct:pmfs_blocknode	typeref:typename:unsigned long
+block_high	./pmfs.h	/^       __le64 block_high;$/;"	m	struct:pmfs_blocknode_lowhigh	typeref:typename:__le64
+block_inuse_head	./pmfs.h	/^	struct list_head block_inuse_head;$/;"	m	struct:pmfs_sb_info	typeref:struct:list_head
+block_low	./pmfs.h	/^	unsigned long block_low;$/;"	m	struct:pmfs_blocknode	typeref:typename:unsigned long
+block_low	./pmfs.h	/^       __le64 block_low;$/;"	m	struct:pmfs_blocknode_lowhigh	typeref:typename:__le64
+block_start	./pmfs.h	/^	unsigned long	block_start;$/;"	m	struct:pmfs_sb_info	typeref:typename:unsigned long
+blocksize	./pmfs.h	/^	unsigned long	blocksize;$/;"	m	struct:pmfs_sb_info	typeref:typename:unsigned long
+bpi	./pmfs.h	/^	unsigned long	bpi;$/;"	m	struct:pmfs_sb_info	typeref:typename:unsigned long
+check_eof_blocks	./pmfs.h	/^static inline void check_eof_blocks(struct super_block *sb, $/;"	f	typeref:typename:void
+clean	./Makefile	/^clean:$/;"	t
+clear_opt	./pmfs.h	/^#define clear_opt(/;"	d
+commit_trans_t	./pmfs.h	/^	commit_trans_t,$/;"	e	enum:timing_category
+create_t	./pmfs.h	/^	create_t,$/;"	e	enum:timing_category
+data	./journal.h	/^	char     data[48];$/;"	m	struct:__anon8c5c7c730108	typeref:typename:char[48]
+de_len	./pmfs_def.h	/^	__le16	de_len;                 \/* length of this directory entry *\/$/;"	m	struct:pmfs_direntry	typeref:typename:__le16
+destroy_blocknode_cache	./super.c	/^static void destroy_blocknode_cache(void)$/;"	f	typeref:typename:void	file:
+destroy_inodecache	./super.c	/^static void destroy_inodecache(void)$/;"	f	typeref:typename:void	file:
+destroy_transaction_cache	./super.c	/^static void destroy_transaction_cache(void)$/;"	f	typeref:typename:void	file:
+dev	./pmfs_def.h	/^	} dev;              \/* device inode *\/$/;"	m	struct:pmfs_inode	typeref:struct:pmfs_inode::__anon99874bbc0108
+do_xip_mapping_read	./xip.c	/^do_xip_mapping_read(struct address_space *mapping,$/;"	f	typeref:typename:ssize_t	file:
+dump_transaction	./journal.c	/^static void dump_transaction(struct pmfs_sb_info *sbi,$/;"	f	typeref:typename:void	file:
+evict_inode_t	./pmfs.h	/^	evict_inode_t,$/;"	e	enum:timing_category
+exit_pmfs_fs	./super.c	/^static void __exit exit_pmfs_fs(void)$/;"	f	typeref:typename:void __exit	file:
+file_type	./pmfs_def.h	/^	u8	file_type;              \/* file type *\/$/;"	m	struct:pmfs_direntry	typeref:typename:u8
+first_pmfs_super	./super.c	/^static void *first_pmfs_super;$/;"	v	typeref:typename:void *	file:
+free_tree_t	./pmfs.h	/^	free_tree_t,$/;"	e	enum:timing_category
+fsync_pages	./pmfs_stats.c	/^atomic64_t fsync_pages = ATOMIC_INIT(0);$/;"	v	typeref:typename:atomic64_t
+fsync_t	./pmfs.h	/^	fsync_t,$/;"	e	enum:timing_category
+gen_id	./journal.h	/^	__le16   gen_id;$/;"	m	struct:__anon8c5c7c730108	typeref:typename:__le16
+gen_id	./journal.h	/^	u16              gen_id;$/;"	m	struct:pmfs_transaction	typeref:typename:u16
+gen_id	./pmfs_def.h	/^	__le16     gen_id;   \/* generation id of the log *\/$/;"	m	struct:pmfs_journal	typeref:typename:__le16
+get_pmfs_super	./super.c	/^struct pmfs_super_block *get_pmfs_super(void)$/;"	f	typeref:struct:pmfs_super_block *
+gid	./pmfs.h	/^	kgid_t		gid;    \/* Mount gid for root directory *\/$/;"	m	struct:pmfs_sb_info	typeref:typename:kgid_t
+head	./pmfs_def.h	/^	__le32     head;$/;"	m	struct:pmfs_journal	typeref:typename:__le32
+height	./pmfs_def.h	/^	u8	    height;         \/* height of data b-tree; max 3 for now *\/$/;"	m	struct:pmfs_inode	typeref:typename:u8
+i_atime	./pmfs_def.h	/^	__le32	i_atime;            \/* Access time *\/$/;"	m	struct:pmfs_inode	typeref:typename:__le32
+i_blk_type	./pmfs_def.h	/^	u8	    i_blk_type;     \/* data block size this inode uses *\/$/;"	m	struct:pmfs_inode	typeref:typename:u8
+i_blocks	./pmfs_def.h	/^	__le64	i_blocks;           \/* Blocks count *\/$/;"	m	struct:pmfs_inode	typeref:typename:__le64
+i_ctime	./pmfs_def.h	/^	__le32	i_ctime;            \/* Inode modification time *\/$/;"	m	struct:pmfs_inode	typeref:typename:__le32
+i_dir_start_lookup	./pmfs.h	/^	__u32   i_dir_start_lookup;$/;"	m	struct:pmfs_inode_info	typeref:typename:__u32
+i_dtime	./pmfs_def.h	/^	__le32	i_dtime;            \/* Deletion Time *\/$/;"	m	struct:pmfs_inode	typeref:typename:__le32
+i_flags	./pmfs_def.h	/^	__le32	i_flags;            \/* Inode flags *\/$/;"	m	struct:pmfs_inode	typeref:typename:__le32
+i_generation	./pmfs_def.h	/^	__le32	i_generation;       \/* File version (for NFS) *\/$/;"	m	struct:pmfs_inode	typeref:typename:__le32
+i_gid	./pmfs_def.h	/^	__le32	i_gid;              \/* Group Id *\/$/;"	m	struct:pmfs_inode	typeref:typename:__le32
+i_links_count	./pmfs_def.h	/^	__le16	i_links_count;      \/* Links count *\/$/;"	m	struct:pmfs_inode	typeref:typename:__le16
+i_mode	./pmfs_def.h	/^	__le16	i_mode;             \/* File mode *\/$/;"	m	struct:pmfs_inode	typeref:typename:__le16
+i_mtime	./pmfs_def.h	/^	__le32	i_mtime;            \/* Inode b-tree Modification time *\/$/;"	m	struct:pmfs_inode	typeref:typename:__le32
+i_next_truncate	./pmfs_def.h	/^	__le64  i_next_truncate;    \/* inode num of the next truncated inode *\/$/;"	m	struct:pmfs_inode_truncate_item	typeref:typename:__le64
+i_rsvd	./pmfs_def.h	/^	__le16	i_rsvd;         \/* reserved. used to be checksum *\/$/;"	m	struct:pmfs_inode	typeref:typename:__le16
+i_size	./pmfs_def.h	/^	__le64	i_size;             \/* Size of data in bytes *\/$/;"	m	struct:pmfs_inode	typeref:typename:__le64
+i_truncated	./pmfs.h	/^	struct list_head i_truncated;$/;"	m	struct:pmfs_inode_info	typeref:struct:list_head
+i_truncatesize	./pmfs_def.h	/^	__le64	i_truncatesize;     \/* Size of truncated inode *\/$/;"	m	struct:pmfs_inode_truncate_item	typeref:typename:__le64
+i_uid	./pmfs_def.h	/^	__le32	i_uid;              \/* Owner Uid *\/$/;"	m	struct:pmfs_inode	typeref:typename:__le32
+i_xattr	./pmfs_def.h	/^	__le64	i_xattr;            \/* Extended attribute block *\/$/;"	m	struct:pmfs_inode	typeref:typename:__le64
+init_blocknode_cache	./super.c	/^static int __init init_blocknode_cache(void)$/;"	f	typeref:typename:int __init	file:
+init_inodecache	./super.c	/^static int __init init_inodecache(void)$/;"	f	typeref:typename:int __init	file:
+init_once	./super.c	/^static void init_once(void *foo)$/;"	f	typeref:typename:void	file:
+init_pmfs_fs	./super.c	/^static int __init init_pmfs_fs(void)$/;"	f	typeref:typename:int __init	file:
+init_transaction_cache	./super.c	/^static int __init init_transaction_cache(void)$/;"	f	typeref:typename:int __init	file:
+initsize	./pmfs.h	/^	unsigned long	initsize;$/;"	m	struct:pmfs_sb_info	typeref:typename:unsigned long
+ino	./pmfs_def.h	/^	__le64	ino;                    \/* inode no pointed to by this entry *\/$/;"	m	struct:pmfs_direntry	typeref:typename:__le64
+inode_table_mutex	./pmfs.h	/^	struct mutex inode_table_mutex;$/;"	m	struct:pmfs_sb_info	typeref:struct:mutex
+internal_write_t	./pmfs.h	/^	internal_write_t,$/;"	e	enum:timing_category
+invalidate_gen_id	./journal.c	/^static inline void invalidate_gen_id(pmfs_logentry_t *le)$/;"	f	typeref:typename:void	file:
+invalidate_remaining_journal	./journal.c	/^static void invalidate_remaining_journal(struct super_block *sb,$/;"	f	typeref:typename:void	file:
+is_empty_meta_block	./inode.c	/^static inline bool is_empty_meta_block(__le64 *node, unsigned int start_idx,$/;"	f	typeref:typename:bool	file:
+journal_base_addr	./pmfs.h	/^	void       *journal_base_addr;$/;"	m	struct:pmfs_sb_info	typeref:typename:void *
+journal_mutex	./pmfs.h	/^	struct mutex journal_mutex;$/;"	m	struct:pmfs_sb_info	typeref:struct:mutex
+jsize	./pmfs.h	/^	uint32_t    jsize;$/;"	m	struct:pmfs_sb_info	typeref:typename:uint32_t
+length	./ioctl.c	/^	size_t	length;$/;"	m	struct:sync_range	typeref:typename:size_t	file:
+link	./pmfs.h	/^	struct list_head link;$/;"	m	struct:pmfs_blocknode	typeref:struct:list_head
+log_cleaner_thread	./pmfs.h	/^	struct task_struct *log_cleaner_thread;$/;"	m	struct:pmfs_sb_info	typeref:struct:task_struct *
+log_cleaner_try_sleeping	./journal.c	/^static void log_cleaner_try_sleeping(struct  pmfs_sb_info *sbi)$/;"	f	typeref:typename:void	file:
+log_cleaner_wait	./pmfs.h	/^	wait_queue_head_t  log_cleaner_wait;$/;"	m	struct:pmfs_sb_info	typeref:typename:wait_queue_head_t
+mapping_is_xip	./xip.h	/^#define mapping_is_xip(/;"	d
+measure_timing_pmfs	./super.c	/^int measure_timing_pmfs = 0;$/;"	v	typeref:typename:int
+memcpy_r_t	./pmfs.h	/^	memcpy_r_t,$/;"	e	enum:timing_category
+memcpy_to_nvmm	./xip.c	/^static inline size_t memcpy_to_nvmm(char *kmem, loff_t offset,$/;"	f	typeref:typename:size_t	file:
+memcpy_w_t	./pmfs.h	/^	memcpy_w_t,$/;"	e	enum:timing_category
+memset_nt	./pmfs.h	/^static inline void memset_nt(void *dest, uint32_t dword, size_t length)$/;"	f	typeref:typename:void
+mmap_fault_t	./pmfs.h	/^	mmap_fault_t,$/;"	e	enum:timing_category
+mode	./pmfs.h	/^	umode_t		mode;   \/* Mount mode for root directory *\/$/;"	m	struct:pmfs_sb_info	typeref:typename:umode_t
+name	./pmfs_def.h	/^	char	name[PMFS_NAME_LEN];   \/* File name *\/$/;"	m	struct:pmfs_direntry	typeref:typename:char[]
+name_len	./pmfs_def.h	/^	u8	name_len;               \/* length of the directory entry name *\/$/;"	m	struct:pmfs_direntry	typeref:typename:u8
+new_trans_t	./pmfs.h	/^	new_trans_t,$/;"	e	enum:timing_category
+next_gen_id	./journal.c	/^static inline uint16_t next_gen_id(uint16_t gen_id)$/;"	f	typeref:typename:uint16_t	file:
+next_generation	./pmfs.h	/^	atomic_t	next_generation;$/;"	m	struct:pmfs_sb_info	typeref:typename:atomic_t
+next_log_entry	./journal.c	/^static inline uint32_t next_log_entry(uint32_t jsize, uint32_t le_off)$/;"	f	typeref:typename:uint32_t	file:
+next_transaction_id	./pmfs.h	/^	uint32_t    next_transaction_id;$/;"	m	struct:pmfs_sb_info	typeref:typename:uint32_t
+num_blocknode_allocated	./pmfs.h	/^	unsigned long num_blocknode_allocated;$/;"	m	struct:pmfs_sb_info	typeref:typename:unsigned long
+num_entries	./journal.h	/^	u16              num_entries;$/;"	m	struct:pmfs_transaction	typeref:typename:u16
+num_free_blocks	./pmfs.h	/^	unsigned long	num_free_blocks;$/;"	m	struct:pmfs_sb_info	typeref:typename:unsigned long
+num_inodes	./pmfs.h	/^	unsigned long	num_inodes;$/;"	m	struct:pmfs_sb_info	typeref:typename:unsigned long
+num_used	./journal.h	/^	u16              num_used;$/;"	m	struct:pmfs_transaction	typeref:typename:u16
+offset	./ioctl.c	/^	off_t	offset;$/;"	m	struct:sync_range	typeref:typename:off_t	file:
+pad	./pmfs_def.h	/^	__le16     pad;$/;"	m	struct:pmfs_journal	typeref:typename:__le16
+padding	./pmfs_def.h	/^	__le32 padding;     \/* pad to ensure truncate_item starts 8-byte aligned *\/$/;"	m	struct:pmfs_inode	typeref:typename:__le32
+parent	./journal.h	/^	struct pmfs_transaction *parent;$/;"	m	struct:pmfs_transaction	typeref:struct:pmfs_transaction *
+phys_addr	./pmfs.h	/^	phys_addr_t	phys_addr;$/;"	m	struct:pmfs_sb_info	typeref:typename:phys_addr_t
+pmfs-y	./Makefile	/^pmfs-y := bbuild.o balloc.o dir.o file.o inode.o namei.o super.o symlink.o ioctl.o pmfs_stats.o /;"	m
+pmfs_abort_transaction	./journal.c	/^int pmfs_abort_transaction(struct super_block *sb, pmfs_transaction_t *trans)$/;"	f	typeref:typename:int
+pmfs_add_dirent_to_buf	./dir.c	/^static int pmfs_add_dirent_to_buf(pmfs_transaction_t *trans,$/;"	f	typeref:typename:int	file:
+pmfs_add_entry	./dir.c	/^int pmfs_add_entry(pmfs_transaction_t *trans, struct dentry *dentry,$/;"	f	typeref:typename:int
+pmfs_add_logentry	./journal.c	/^int pmfs_add_logentry(struct super_block *sb,$/;"	f	typeref:typename:int
+pmfs_add_nondir	./namei.c	/^static inline int pmfs_add_nondir(pmfs_transaction_t *trans,$/;"	f	typeref:typename:int	file:
+pmfs_alloc_blocknode	./super.c	/^struct pmfs_blocknode *pmfs_alloc_blocknode(struct super_block *sb)$/;"	f	typeref:struct:pmfs_blocknode *
+pmfs_alloc_blocks	./inode.c	/^inline int pmfs_alloc_blocks(pmfs_transaction_t *trans, struct inode *inode,$/;"	f	typeref:typename:int
+pmfs_alloc_inode	./super.c	/^static struct inode *pmfs_alloc_inode(struct super_block *sb)$/;"	f	typeref:struct:inode *	file:
+pmfs_alloc_transaction	./super.c	/^inline pmfs_transaction_t *pmfs_alloc_transaction(void)$/;"	f	typeref:typename:pmfs_transaction_t *
+pmfs_aops_xip	./inode.c	/^const struct address_space_operations pmfs_aops_xip = {$/;"	v	typeref:typename:const struct address_space_operations
+pmfs_backing_option	./pmfs.h	/^	unsigned int	pmfs_backing_option;$/;"	m	struct:pmfs_sb_info	typeref:typename:unsigned int
+pmfs_block_symlink	./symlink.c	/^int pmfs_block_symlink(struct inode *inode, const char *symname, int len)$/;"	f	typeref:typename:int
+pmfs_block_truncate_page	./inode.c	/^static void pmfs_block_truncate_page(struct inode *inode, loff_t newsize)$/;"	f	typeref:typename:void	file:
+pmfs_blocknode	./pmfs.h	/^struct pmfs_blocknode {$/;"	s
+pmfs_blocknode_cachep	./super.c	/^static struct kmem_cache *pmfs_blocknode_cachep;$/;"	v	typeref:struct:kmem_cache *	file:
+pmfs_blocknode_lowhigh	./pmfs.h	/^struct pmfs_blocknode_lowhigh {$/;"	s
+pmfs_calc_checksum	./pmfs.h	/^static inline int pmfs_calc_checksum(u8 *data, int n)$/;"	f	typeref:typename:int
+pmfs_can_set_blocksize_hint	./file.c	/^static inline int pmfs_can_set_blocksize_hint(struct pmfs_inode *pi,$/;"	f	typeref:typename:int	file:
+pmfs_check_dir_entry	./namei.c	/^int pmfs_check_dir_entry(const char *function, struct inode *dir,$/;"	f	typeref:typename:int
+pmfs_check_integrity	./super.c	/^int pmfs_check_integrity(struct super_block *sb,$/;"	f	typeref:typename:int
+pmfs_check_size	./super.c	/^static bool pmfs_check_size (struct super_block *sb, unsigned long size)$/;"	f	typeref:typename:bool	file:
+pmfs_clean_journal	./journal.c	/^static int pmfs_clean_journal(struct super_block *sb, bool unmount,$/;"	f	typeref:typename:int	file:
+pmfs_clear_bit	./pmfs.h	/^#define pmfs_clear_bit /;"	d
+pmfs_clear_edge_blk	./xip.c	/^static inline void pmfs_clear_edge_blk (struct super_block *sb, struct$/;"	f	typeref:typename:void	file:
+pmfs_clear_stats	./pmfs_stats.c	/^void pmfs_clear_stats(void) {$/;"	f	typeref:typename:void
+pmfs_commit_logentry	./journal.c	/^static inline void pmfs_commit_logentry(struct super_block *sb,$/;"	f	typeref:typename:void	file:
+pmfs_commit_transaction	./journal.c	/^int pmfs_commit_transaction(struct super_block *sb,$/;"	f	typeref:typename:int
+pmfs_compat_ioctl	./ioctl.c	/^long pmfs_compat_ioctl(struct file *file, unsigned int cmd, unsigned long arg)$/;"	f	typeref:typename:long
+pmfs_count_free_blocks	./balloc.c	/^unsigned long pmfs_count_free_blocks(struct super_block *sb)$/;"	f	typeref:typename:unsigned long
+pmfs_create	./namei.c	/^static int pmfs_create(struct user_namespace *mnt_userns, struct inode *dir,$/;"	f	typeref:typename:int	file:
+pmfs_current_transaction	./journal.c	/^inline pmfs_transaction_t *pmfs_current_transaction(void)$/;"	f	typeref:typename:pmfs_transaction_t *
+pmfs_dbg	./pmfs.h	/^#define pmfs_dbg(/;"	d
+pmfs_dbg1	./pmfs.h	/^#define pmfs_dbg1(/;"	d
+pmfs_dbg_mmap4k	./pmfs.h	/^#define pmfs_dbg_mmap4k(/;"	d
+pmfs_dbg_mmaphuge	./pmfs.h	/^#define pmfs_dbg_mmaphuge(/;"	d
+pmfs_dbg_mmapv	./pmfs.h	/^#define pmfs_dbg_mmapv(/;"	d
+pmfs_dbg_mmapvv	./pmfs.h	/^#define pmfs_dbg_mmapvv(/;"	d
+pmfs_dbg_trans	./pmfs.h	/^#define pmfs_dbg_trans(/;"	d
+pmfs_dbg_verbose	./pmfs.h	/^#define pmfs_dbg_verbose(/;"	d
+pmfs_dbgmask	./super.c	/^unsigned int pmfs_dbgmask = 0;$/;"	v	typeref:typename:unsigned int
+pmfs_dec_count	./namei.c	/^static inline void pmfs_dec_count(struct inode *inode, struct pmfs_inode *pi)$/;"	f	typeref:typename:void	file:
+pmfs_decrease_btree_height	./inode.c	/^static void pmfs_decrease_btree_height(struct super_block *sb,$/;"	f	typeref:typename:void	file:
+pmfs_destroy_inode	./super.c	/^static void pmfs_destroy_inode(struct inode *inode)$/;"	f	typeref:typename:void	file:
+pmfs_dir_inode_operations	./namei.c	/^const struct inode_operations pmfs_dir_inode_operations = {$/;"	v	typeref:typename:const struct inode_operations
+pmfs_dir_operations	./dir.c	/^const struct file_operations pmfs_dir_operations = {$/;"	v	typeref:typename:const struct file_operations
+pmfs_direct_IO	./inode.c	/^static ssize_t pmfs_direct_IO(struct kiocb *iocb, struct iov_iter *iter)$/;"	f	typeref:typename:ssize_t	file:
+pmfs_direntry	./pmfs_def.h	/^struct pmfs_direntry {$/;"	s
+pmfs_dirty_inode	./inode.c	/^void pmfs_dirty_inode(struct inode *inode, int flags)$/;"	f	typeref:typename:void
+pmfs_empty_dir	./namei.c	/^static int pmfs_empty_dir(struct inode *inode)$/;"	f	typeref:typename:int	file:
+pmfs_err	./pmfs.h	/^#define pmfs_err(/;"	d
+pmfs_error_mng	./super.c	/^void pmfs_error_mng(struct super_block *sb, const char *fmt, ...)$/;"	f	typeref:typename:void
+pmfs_evict_inode	./inode.c	/^void pmfs_evict_inode(struct inode *inode)$/;"	f	typeref:typename:void
+pmfs_export_ops	./super.c	/^static const struct export_operations pmfs_export_ops = {$/;"	v	typeref:typename:const struct export_operations	file:
+pmfs_export_ops	./super.c	/^static const struct export_operations pmfs_export_ops;$/;"	v	typeref:typename:const struct export_operations	file:
+pmfs_fallocate	./file.c	/^static long pmfs_fallocate(struct file *file, int mode, loff_t offset,$/;"	f	typeref:typename:long	file:
+pmfs_fh_to_dentry	./super.c	/^static struct dentry *pmfs_fh_to_dentry(struct super_block *sb,$/;"	f	typeref:struct:dentry *	file:
+pmfs_fh_to_parent	./super.c	/^static struct dentry *pmfs_fh_to_parent(struct super_block *sb,$/;"	f	typeref:struct:dentry *	file:
+pmfs_file_inode_operations	./file.c	/^const struct inode_operations pmfs_file_inode_operations = {$/;"	v	typeref:typename:const struct inode_operations
+pmfs_file_write_fast	./xip.c	/^static ssize_t pmfs_file_write_fast(struct super_block *sb, struct inode *inode,$/;"	f	typeref:typename:ssize_t	file:
+pmfs_fill_super	./super.c	/^static int pmfs_fill_super(struct super_block *sb, void *data, int silent)$/;"	f	typeref:typename:int	file:
+pmfs_find_and_alloc_blocks	./xip.c	/^static int pmfs_find_and_alloc_blocks(struct inode *inode, sector_t iblock,$/;"	f	typeref:typename:int	file:
+pmfs_find_data_block	./inode.c	/^u64 pmfs_find_data_block(struct inode *inode, unsigned long file_blocknr)$/;"	f	typeref:typename:u64
+pmfs_find_next_zero_bit	./pmfs.h	/^#define pmfs_find_next_zero_bit /;"	d
+pmfs_find_region	./inode.c	/^unsigned long pmfs_find_region(struct inode *inode, loff_t *offset, int hole)$/;"	f	typeref:typename:unsigned long
+pmfs_flush	./file.c	/^static int pmfs_flush(struct file *file, fl_owner_t id)$/;"	f	typeref:typename:int	file:
+pmfs_flush_buffer	./pmfs_def.h	/^static inline void pmfs_flush_buffer(void *buf, uint32_t len, bool fence)$/;"	f	typeref:typename:void
+pmfs_flush_edge_cachelines	./xip.c	/^static inline void pmfs_flush_edge_cachelines(loff_t pos, ssize_t len,$/;"	f	typeref:typename:void	file:
+pmfs_flush_transaction	./journal.c	/^static void pmfs_flush_transaction(struct super_block *sb,$/;"	f	typeref:typename:void	file:
+pmfs_forward_journal	./journal.c	/^static void pmfs_forward_journal(struct super_block *sb, struct pmfs_sb_info$/;"	f	typeref:typename:void	file:
+pmfs_free_block	./balloc.c	/^void pmfs_free_block(struct super_block *sb, unsigned long blocknr,$/;"	f	typeref:typename:void
+pmfs_free_blocknode	./super.c	/^void pmfs_free_blocknode(struct super_block *sb, struct pmfs_blocknode *bnode)$/;"	f	typeref:typename:void
+pmfs_free_inode	./inode.c	/^static int pmfs_free_inode(struct inode *inode)$/;"	f	typeref:typename:int	file:
+pmfs_free_inode_subtree	./inode.c	/^unsigned int pmfs_free_inode_subtree(struct super_block *sb,$/;"	f	typeref:typename:unsigned int
+pmfs_free_logentries	./journal.c	/^static int pmfs_free_logentries(struct super_block *sb, int max_log_entries)$/;"	f	typeref:typename:int	file:
+pmfs_free_transaction	./super.c	/^inline void pmfs_free_transaction(pmfs_transaction_t *trans)$/;"	f	typeref:typename:void
+pmfs_fs_type	./super.c	/^static struct file_system_type pmfs_fs_type = {$/;"	v	typeref:struct:file_system_type	file:
+pmfs_fsync	./file.c	/^int pmfs_fsync(struct file *file, loff_t start, loff_t end, int datasync)$/;"	f	typeref:typename:int
+pmfs_get_addr_off	./pmfs.h	/^pmfs_get_addr_off(struct pmfs_sb_info *sbi, void *addr)$/;"	f	typeref:typename:u64
+pmfs_get_block	./pmfs.h	/^static inline void *pmfs_get_block(struct super_block *sb, u64 block)$/;"	f	typeref:typename:void *
+pmfs_get_block_info	./super.c	/^static int pmfs_get_block_info(struct super_block *sb,$/;"	f	typeref:typename:int	file:
+pmfs_get_block_off	./pmfs.h	/^pmfs_get_block_off(struct super_block *sb, unsigned long blocknr,$/;"	f	typeref:typename:u64
+pmfs_get_blocknr	./pmfs.h	/^pmfs_get_blocknr(struct super_block *sb, u64 block, unsigned short btype)$/;"	f	typeref:typename:unsigned long
+pmfs_get_inode	./pmfs.h	/^static inline struct pmfs_inode *pmfs_get_inode(struct super_block *sb,$/;"	f	typeref:struct:pmfs_inode *
+pmfs_get_inode_flags	./inode.c	/^void pmfs_get_inode_flags(struct inode *inode, struct pmfs_inode *pi)$/;"	f	typeref:typename:void
+pmfs_get_inode_table	./pmfs.h	/^static inline struct pmfs_inode *pmfs_get_inode_table(struct super_block *sb)$/;"	f	typeref:struct:pmfs_inode *
+pmfs_get_journal	./pmfs.h	/^static inline pmfs_journal_t *pmfs_get_journal(struct super_block *sb)$/;"	f	typeref:typename:pmfs_journal_t *
+pmfs_get_link	./symlink.c	/^static const char *pmfs_get_link(struct dentry *dentry, struct inode *inode,$/;"	f	typeref:typename:const char *	file:
+pmfs_get_numblocks	./pmfs.h	/^pmfs_get_numblocks(unsigned short btype)$/;"	f	typeref:typename:unsigned long
+pmfs_get_parent	./namei.c	/^struct dentry *pmfs_get_parent(struct dentry *child)$/;"	f	typeref:struct:dentry *
+pmfs_get_pfn	./pmfs.h	/^static inline unsigned long pmfs_get_pfn(struct super_block *sb, u64 block)$/;"	f	typeref:typename:unsigned long
+pmfs_get_redund_super	./pmfs.h	/^static inline struct pmfs_super_block *pmfs_get_redund_super(struct super_block *sb)$/;"	f	typeref:struct:pmfs_super_block *
+pmfs_get_super	./pmfs.h	/^static inline struct pmfs_super_block *pmfs_get_super(struct super_block *sb)$/;"	f	typeref:struct:pmfs_super_block *
+pmfs_get_timing_stats	./pmfs_stats.c	/^static void pmfs_get_timing_stats(void) {$/;"	f	typeref:typename:void	file:
+pmfs_get_truncate_item	./pmfs.h	/^static inline struct pmfs_inode_truncate_item * pmfs_get_truncate_item (struct $/;"	f	typeref:struct:pmfs_inode_truncate_item *
+pmfs_get_truncate_list_head	./pmfs.h	/^static inline struct pmfs_inode_truncate_item * pmfs_get_truncate_list_head ($/;"	f	typeref:struct:pmfs_inode_truncate_item *
+pmfs_get_xip_mem	./xip.c	/^int pmfs_get_xip_mem(struct address_space *mapping, pgoff_t pgoff, int create,$/;"	f	typeref:typename:int
+pmfs_getattr	./inode.c	/^int pmfs_getattr(struct user_namespace *mnt_userns, const struct path *path,$/;"	f	typeref:typename:int
+pmfs_has_huge_ioremap	./super.c	/^static inline int pmfs_has_huge_ioremap(struct super_block *sb)$/;"	f	typeref:typename:int	file:
+pmfs_i_callback	./super.c	/^static void pmfs_i_callback(struct rcu_head *head)$/;"	f	typeref:typename:void	file:
+pmfs_iget	./inode.c	/^struct inode *pmfs_iget(struct super_block *sb, unsigned long ino)$/;"	f	typeref:struct:inode *
+pmfs_inc_count	./namei.c	/^static inline void pmfs_inc_count(struct inode *inode, struct pmfs_inode *pi)$/;"	f	typeref:typename:void	file:
+pmfs_increase_btree_height	./inode.c	/^static int pmfs_increase_btree_height(struct super_block *sb,$/;"	f	typeref:typename:int	file:
+pmfs_increase_inode_table_size	./inode.c	/^static int pmfs_increase_inode_table_size(struct super_block *sb)$/;"	f	typeref:typename:int	file:
+pmfs_info	./pmfs.h	/^#define pmfs_info(/;"	d
+pmfs_init	./super.c	/^static struct pmfs_inode *pmfs_init(struct super_block *sb,$/;"	f	typeref:struct:pmfs_inode *	file:
+pmfs_init_blockmap	./balloc.c	/^void pmfs_init_blockmap(struct super_block *sb, unsigned long init_used_size)$/;"	f	typeref:typename:void
+pmfs_init_inode_table	./inode.c	/^int pmfs_init_inode_table(struct super_block *sb)$/;"	f	typeref:typename:int
+pmfs_inode	./pmfs_def.h	/^struct pmfs_inode {$/;"	s
+pmfs_inode_blk_shift	./pmfs.h	/^static inline unsigned int pmfs_inode_blk_shift (struct pmfs_inode *pi)$/;"	f	typeref:typename:unsigned int
+pmfs_inode_blk_size	./pmfs.h	/^static inline uint32_t pmfs_inode_blk_size (struct pmfs_inode *pi)$/;"	f	typeref:typename:uint32_t
+pmfs_inode_by_name	./namei.c	/^static ino_t pmfs_inode_by_name(struct inode *dir, struct qstr *entry,$/;"	f	typeref:typename:ino_t	file:
+pmfs_inode_cachep	./super.c	/^static struct kmem_cache *pmfs_inode_cachep;$/;"	v	typeref:struct:kmem_cache *	file:
+pmfs_inode_count_iblocks	./inode.c	/^static inline unsigned long pmfs_inode_count_iblocks (struct super_block *sb,$/;"	f	typeref:typename:unsigned long	file:
+pmfs_inode_count_iblocks_recursive	./inode.c	/^static unsigned long pmfs_inode_count_iblocks_recursive(struct super_block *sb,$/;"	f	typeref:typename:unsigned long	file:
+pmfs_inode_info	./pmfs.h	/^struct pmfs_inode_info {$/;"	s
+pmfs_inode_truncate_item	./pmfs_def.h	/^struct pmfs_inode_truncate_item {$/;"	s
+pmfs_invalidate_logentries	./journal.c	/^static void pmfs_invalidate_logentries(struct super_block *sb,$/;"	f	typeref:typename:void	file:
+pmfs_ioctl	./ioctl.c	/^long pmfs_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)$/;"	f	typeref:typename:long
+pmfs_is_inode_dirty	./inode.c	/^static bool pmfs_is_inode_dirty(struct inode *inode, struct pmfs_inode *pi)$/;"	f	typeref:typename:bool	file:
+pmfs_is_mounting	./pmfs.h	/^static inline int pmfs_is_mounting(struct super_block *sb)$/;"	f	typeref:typename:int
+pmfs_is_protected	./wprotect.h	/^static inline int pmfs_is_protected(struct super_block *sb)$/;"	f	typeref:typename:int
+pmfs_is_wprotected	./wprotect.h	/^static inline int pmfs_is_wprotected(struct super_block *sb)$/;"	f	typeref:typename:int
+pmfs_journal	./pmfs_def.h	/^typedef struct pmfs_journal {$/;"	s
+pmfs_journal_cleaner_run	./journal.c	/^static int pmfs_journal_cleaner_run(struct super_block *sb)$/;"	f	typeref:typename:int	file:
+pmfs_journal_hard_init	./journal.c	/^int pmfs_journal_hard_init(struct super_block *sb, uint64_t base,$/;"	f	typeref:typename:int
+pmfs_journal_soft_init	./journal.c	/^int pmfs_journal_soft_init(struct super_block *sb)$/;"	f	typeref:typename:int
+pmfs_journal_t	./pmfs_def.h	/^} pmfs_journal_t;$/;"	t	typeref:struct:pmfs_journal
+pmfs_journal_uninit	./journal.c	/^int pmfs_journal_uninit(struct super_block *sb)$/;"	f	typeref:typename:int
+pmfs_link	./namei.c	/^static int pmfs_link(struct dentry *dest_dentry, struct inode *dir,$/;"	f	typeref:typename:int	file:
+pmfs_llseek	./file.c	/^static loff_t pmfs_llseek(struct file *file, loff_t offset, int origin)$/;"	f	typeref:typename:loff_t	file:
+pmfs_log_cleaner	./journal.c	/^static int pmfs_log_cleaner(void *arg)$/;"	f	typeref:typename:int	file:
+pmfs_logentry_t	./journal.h	/^} pmfs_logentry_t;$/;"	t	typeref:struct:__anon8c5c7c730108
+pmfs_lookup	./namei.c	/^static struct dentry *pmfs_lookup(struct inode *dir, struct dentry *dentry,$/;"	f	typeref:struct:dentry *	file:
+pmfs_mask_flags	./pmfs.h	/^static inline __le32 pmfs_mask_flags(umode_t mode, __le32 flags)$/;"	f	typeref:typename:__le32
+pmfs_match	./pmfs.h	/^static inline int pmfs_match(int len, const char *const name,$/;"	f	typeref:typename:int
+pmfs_max_size	./super.c	/^static loff_t pmfs_max_size(int bits)$/;"	f	typeref:typename:loff_t	file:
+pmfs_memcpy_atomic	./pmfs.h	/^static inline void pmfs_memcpy_atomic (void *dst, const void *src, u8 size)$/;"	f	typeref:typename:void
+pmfs_memlock_block	./wprotect.h	/^static inline void pmfs_memlock_block(struct super_block *sb, void *bp)$/;"	f	typeref:typename:void
+pmfs_memlock_inode	./wprotect.h	/^static inline void pmfs_memlock_inode(struct super_block *sb,$/;"	f	typeref:typename:void
+pmfs_memlock_range	./wprotect.h	/^static inline void pmfs_memlock_range(struct super_block *sb, void *p,$/;"	f	typeref:typename:void
+pmfs_memlock_super	./wprotect.h	/^static inline void pmfs_memlock_super(struct super_block *sb,$/;"	f	typeref:typename:void
+pmfs_memunlock_block	./wprotect.h	/^static inline void pmfs_memunlock_block(struct super_block *sb, void *bp)$/;"	f	typeref:typename:void
+pmfs_memunlock_inode	./wprotect.h	/^static inline void pmfs_memunlock_inode(struct super_block *sb,$/;"	f	typeref:typename:void
+pmfs_memunlock_range	./wprotect.h	/^static inline void pmfs_memunlock_range(struct super_block *sb, void *p,$/;"	f	typeref:typename:void
+pmfs_memunlock_super	./wprotect.h	/^static inline void pmfs_memunlock_super(struct super_block *sb,$/;"	f	typeref:typename:void
+pmfs_mkdir	./namei.c	/^static int pmfs_mkdir(struct user_namespace *mnt_userns, struct inode *dir,$/;"	f	typeref:typename:int	file:
+pmfs_mknod	./namei.c	/^static int pmfs_mknod(struct user_namespace *mnt_userns, struct inode *dir,$/;"	f	typeref:typename:int	file:
+pmfs_mount	./super.c	/^static struct dentry *pmfs_mount(struct file_system_type *fs_type,$/;"	f	typeref:struct:dentry *	file:
+pmfs_new_block	./balloc.c	/^int pmfs_new_block(struct super_block *sb, unsigned long *blocknr,$/;"	f	typeref:typename:int
+pmfs_new_data_block	./inode.c	/^static int pmfs_new_data_block(struct super_block *sb, struct pmfs_inode *pi,$/;"	f	typeref:typename:int	file:
+pmfs_new_inode	./inode.c	/^struct inode *pmfs_new_inode(pmfs_transaction_t *trans, struct inode *dir,$/;"	f	typeref:struct:inode *
+pmfs_new_transaction	./journal.c	/^pmfs_transaction_t *pmfs_new_transaction(struct super_block *sb,$/;"	f	typeref:typename:pmfs_transaction_t *
+pmfs_next_blocknode	./balloc.c	/^static struct pmfs_blocknode *pmfs_next_blocknode(struct pmfs_blocknode *i,$/;"	f	typeref:struct:pmfs_blocknode *	file:
+pmfs_next_entry	./namei.c	/^static inline struct pmfs_direntry *pmfs_next_entry(struct pmfs_direntry *p)$/;"	f	typeref:struct:pmfs_direntry *	file:
+pmfs_nfs_get_inode	./super.c	/^static struct inode *pmfs_nfs_get_inode(struct super_block *sb,$/;"	f	typeref:struct:inode *	file:
+pmfs_notify_change	./inode.c	/^int pmfs_notify_change(struct user_namespace *mnt_userns, struct dentry *dentry,$/;"	f	typeref:typename:int
+pmfs_parse_options	./super.c	/^static int pmfs_parse_options(char *options, struct pmfs_sb_info *sbi,$/;"	f	typeref:typename:int	file:
+pmfs_print_IO_stats	./pmfs_stats.c	/^void pmfs_print_IO_stats(void)$/;"	f	typeref:typename:void
+pmfs_print_timing_stats	./pmfs_stats.c	/^void pmfs_print_timing_stats(void) {$/;"	f	typeref:typename:void
+pmfs_process_transaction	./journal.c	/^static uint32_t pmfs_process_transaction(struct super_block *sb, uint32_t head,$/;"	f	typeref:typename:uint32_t	file:
+pmfs_put_super	./super.c	/^static void pmfs_put_super(struct super_block *sb)$/;"	f	typeref:typename:void	file:
+pmfs_read_inode	./inode.c	/^static int pmfs_read_inode(struct inode *inode, struct pmfs_inode *pi)$/;"	f	typeref:typename:int	file:
+pmfs_readdir	./dir.c	/^static int pmfs_readdir(struct file *file, struct dir_context *ctx)$/;"	f	typeref:typename:int	file:
+pmfs_readlink	./symlink.c	/^static int pmfs_readlink(struct dentry *dentry, char __user *buffer, int buflen)$/;"	f	typeref:typename:int	file:
+pmfs_readlink_copy	./symlink.c	/^static int pmfs_readlink_copy(char __user *buffer, int buflen, const char *link)$/;"	f	typeref:typename:int	file:
+pmfs_recover_journal	./journal.c	/^int pmfs_recover_journal(struct super_block *sb)$/;"	f	typeref:typename:int
+pmfs_recover_redo_journal	./journal.c	/^static int pmfs_recover_redo_journal(struct super_block *sb)$/;"	f	typeref:typename:int	file:
+pmfs_recover_transaction	./journal.c	/^static uint32_t pmfs_recover_transaction(struct super_block *sb, uint32_t head,$/;"	f	typeref:typename:uint32_t	file:
+pmfs_recover_truncate_list	./super.c	/^static void pmfs_recover_truncate_list(struct super_block *sb)$/;"	f	typeref:typename:void	file:
+pmfs_recover_undo_journal	./journal.c	/^static int pmfs_recover_undo_journal(struct super_block *sb)$/;"	f	typeref:typename:int	file:
+pmfs_redo_transaction	./journal.c	/^static void pmfs_redo_transaction(struct super_block *sb,$/;"	f	typeref:typename:void	file:
+pmfs_remount	./super.c	/^int pmfs_remount(struct super_block *sb, int *mntflags, char *data)$/;"	f	typeref:typename:int
+pmfs_remove_entry	./dir.c	/^int pmfs_remove_entry(pmfs_transaction_t *trans, struct dentry *de,$/;"	f	typeref:typename:int
+pmfs_rename	./namei.c	/^static int pmfs_rename(struct user_namespace *mnt_userns, struct inode *old_dir,$/;"	f	typeref:typename:int	file:
+pmfs_rmdir	./namei.c	/^static int pmfs_rmdir(struct inode *dir, struct dentry *dentry)$/;"	f	typeref:typename:int	file:
+pmfs_root_check	./super.c	/^static void pmfs_root_check(struct super_block *sb, struct pmfs_inode *root_pi)$/;"	f	typeref:typename:void	file:
+pmfs_save_blocknode_mappings	./bbuild.c	/^void pmfs_save_blocknode_mappings(struct super_block *sb) {}$/;"	f	typeref:typename:void
+pmfs_sb_info	./pmfs.h	/^struct pmfs_sb_info {$/;"	s
+pmfs_search_dirblock	./namei.c	/^int pmfs_search_dirblock(u8 *blk_base, struct inode *dir, struct qstr *child,$/;"	f	typeref:typename:int
+pmfs_set_bit	./pmfs.h	/^#define pmfs_set_bit /;"	d
+pmfs_set_blocksize	./super.c	/^static void pmfs_set_blocksize(struct super_block *sb, unsigned long size)$/;"	f	typeref:typename:void	file:
+pmfs_set_blocksize_hint	./file.c	/^int pmfs_set_blocksize_hint(struct super_block *sb, struct pmfs_inode *pi,$/;"	f	typeref:typename:int
+pmfs_set_inode_flags	./inode.c	/^void pmfs_set_inode_flags(struct inode *inode, struct pmfs_inode *pi)$/;"	f	typeref:typename:void
+pmfs_setsize	./inode.c	/^void pmfs_setsize(struct inode *inode, loff_t newsize)$/;"	f	typeref:typename:void
+pmfs_setup_blocknode_map	./bbuild.c	/^int pmfs_setup_blocknode_map(struct super_block *sb) { return 0; }$/;"	f	typeref:typename:int
+pmfs_show_options	./super.c	/^static int pmfs_show_options(struct seq_file *seq, struct dentry *root)$/;"	f	typeref:typename:int	file:
+pmfs_sops	./super.c	/^static struct super_operations pmfs_sops = {$/;"	v	typeref:struct:super_operations	file:
+pmfs_sops	./super.c	/^static struct super_operations pmfs_sops;$/;"	v	typeref:struct:super_operations	file:
+pmfs_sparse_last_blocknr	./inode.c	/^static inline unsigned long pmfs_sparse_last_blocknr(unsigned int height,$/;"	f	typeref:typename:unsigned long	file:
+pmfs_special_inode_operations	./namei.c	/^const struct inode_operations pmfs_special_inode_operations = {$/;"	v	typeref:typename:const struct inode_operations
+pmfs_statfs	./super.c	/^int pmfs_statfs(struct dentry *d, struct kstatfs *buf)$/;"	f	typeref:typename:int
+pmfs_super_block	./pmfs_def.h	/^struct pmfs_super_block {$/;"	s
+pmfs_symlink	./namei.c	/^static int pmfs_symlink(struct user_namespace *mnt_userns, struct inode *dir,$/;"	f	typeref:typename:int	file:
+pmfs_symlink_inode_operations	./symlink.c	/^const struct inode_operations pmfs_symlink_inode_operations = {$/;"	v	typeref:typename:const struct inode_operations
+pmfs_sync_super	./wprotect.h	/^static inline void pmfs_sync_super(struct pmfs_super_block *ps)$/;"	f	typeref:typename:void
+pmfs_timing_end	./pmfs.h	/^static inline unsigned long pmfs_timing_end(void) {$/;"	f	typeref:typename:unsigned long
+pmfs_timing_start	./pmfs.h	/^static inline unsigned long pmfs_timing_start(void) {$/;"	f	typeref:typename:unsigned long
+pmfs_transaction	./journal.h	/^typedef struct pmfs_transaction {$/;"	s
+pmfs_transaction_cachep	./super.c	/^static struct kmem_cache *pmfs_transaction_cachep;$/;"	v	typeref:struct:kmem_cache *	file:
+pmfs_transaction_t	./journal.h	/^} pmfs_transaction_t;$/;"	t	typeref:struct:pmfs_transaction
+pmfs_truncate_add	./inode.c	/^void pmfs_truncate_add(struct inode *inode, u64 truncate_size)$/;"	f	typeref:typename:void
+pmfs_truncate_del	./inode.c	/^void pmfs_truncate_del(struct inode *inode)$/;"	f	typeref:typename:void
+pmfs_undo_logentry	./journal.c	/^static inline void pmfs_undo_logentry(struct super_block *sb,$/;"	f	typeref:typename:void	file:
+pmfs_undo_transaction	./journal.c	/^static void pmfs_undo_transaction(struct super_block *sb,$/;"	f	typeref:typename:void	file:
+pmfs_unlink	./namei.c	/^static int pmfs_unlink(struct inode *dir, struct dentry *dentry)$/;"	f	typeref:typename:int	file:
+pmfs_update_inode	./inode.c	/^static void pmfs_update_inode(struct inode *inode, struct pmfs_inode *pi)$/;"	f	typeref:typename:void	file:
+pmfs_update_isize	./inode.c	/^inline void pmfs_update_isize(struct inode *inode, struct pmfs_inode *pi)$/;"	f	typeref:typename:void
+pmfs_update_nlink	./inode.c	/^inline void pmfs_update_nlink(struct inode *inode, struct pmfs_inode *pi)$/;"	f	typeref:typename:void
+pmfs_update_single_field	./inode.c	/^static int pmfs_update_single_field(struct super_block *sb, struct inode *inode,$/;"	f	typeref:typename:int	file:
+pmfs_update_time	./inode.c	/^inline void pmfs_update_time(struct inode *inode, struct pmfs_inode *pi)$/;"	f	typeref:typename:void
+pmfs_update_time_and_size	./pmfs.h	/^static inline void pmfs_update_time_and_size(struct inode *inode,$/;"	f	typeref:typename:void
+pmfs_use_xip	./xip.h	/^static inline int pmfs_use_xip(struct super_block *sb)$/;"	f	typeref:typename:int
+pmfs_warn	./pmfs.h	/^#define pmfs_warn(/;"	d
+pmfs_write_inode	./inode.c	/^int pmfs_write_inode(struct inode *inode, struct writeback_control *wbc)$/;"	f	typeref:typename:int
+pmfs_writeable	./wprotect.c	/^int pmfs_writeable(void *vaddr, unsigned long size, int rw)$/;"	f	typeref:typename:int
+pmfs_xip_file_fault	./xip.c	/^static vm_fault_t pmfs_xip_file_fault(struct vm_fault *vmf)$/;"	f	typeref:typename:vm_fault_t	file:
+pmfs_xip_file_mmap	./xip.c	/^int pmfs_xip_file_mmap(struct file *file, struct vm_area_struct *vma)$/;"	f	typeref:typename:int
+pmfs_xip_file_operations	./file.c	/^const struct file_operations pmfs_xip_file_operations = {$/;"	v	typeref:typename:const struct file_operations
+pmfs_xip_file_read	./xip.c	/^ssize_t pmfs_xip_file_read(struct file *filp, char __user *buf,$/;"	f	typeref:typename:ssize_t
+pmfs_xip_file_write	./xip.c	/^ssize_t pmfs_xip_file_write(struct file *filp, const char __user *buf,$/;"	f	typeref:typename:ssize_t
+pmfs_xip_mem_protect	./wprotect.c	/^int pmfs_xip_mem_protect(struct super_block *sb, void *vaddr,$/;"	f	typeref:typename:int
+pmfs_xip_vm_ops	./xip.c	/^static const struct vm_operations_struct pmfs_xip_vm_ops = {$/;"	v	typeref:typename:const struct vm_operations_struct	file:
+pr_fmt	./pmfs.h	/^#define pr_fmt(/;"	d
+prev_gen_id	./journal.c	/^static inline uint16_t prev_gen_id(uint16_t gen_id)$/;"	f	typeref:typename:uint16_t	file:
+prev_log_entry	./journal.c	/^static inline uint32_t prev_log_entry(uint32_t jsize, uint32_t le_off)$/;"	f	typeref:typename:uint32_t	file:
+rdev	./pmfs_def.h	/^		__le32 rdev;    \/* major\/minor # *\/$/;"	m	struct:pmfs_inode::__anon99874bbc0108	typeref:typename:__le32
+readdir_t	./pmfs.h	/^	readdir_t,$/;"	e	enum:timing_category
+recovery_t	./pmfs.h	/^	recovery_t,$/;"	e	enum:timing_category
+recursive_alloc_blocks	./inode.c	/^static int recursive_alloc_blocks(pmfs_transaction_t *trans,$/;"	f	typeref:typename:int	file:
+recursive_find_region	./inode.c	/^static int recursive_find_region(struct super_block *sb, __le64 block,$/;"	f	typeref:typename:int	file:
+recursive_truncate_blocks	./inode.c	/^static int recursive_truncate_blocks(struct super_block *sb, __le64 block,$/;"	f	typeref:typename:int	file:
+redo_log	./pmfs.h	/^	bool redo_log;$/;"	m	struct:pmfs_sb_info	typeref:typename:bool
+redo_logging	./pmfs_def.h	/^	__le16     redo_logging;$/;"	m	struct:pmfs_journal	typeref:typename:__le16
+root	./pmfs_def.h	/^	__le64	root;               \/* btree root. must be below qw w\/ height *\/$/;"	m	struct:pmfs_inode	typeref:typename:__le64
+s_bdev	./pmfs.h	/^	struct block_device *s_bdev;$/;"	m	struct:pmfs_sb_info	typeref:struct:block_device *
+s_blocksize	./pmfs_def.h	/^	__le32		s_blocksize;        \/* blocksize in bytes *\/$/;"	m	struct:pmfs_super_block	typeref:typename:__le32
+s_free_inode_hint	./pmfs.h	/^	unsigned int	s_free_inode_hint;$/;"	m	struct:pmfs_sb_info	typeref:typename:unsigned int
+s_free_inode_hint	./pmfs_def.h	/^	__le32		s_free_inode_hint;$/;"	m	struct:pmfs_super_block	typeref:typename:__le32
+s_free_inodes_count	./pmfs.h	/^	unsigned int	s_free_inodes_count;    \/* free inodes count *\/$/;"	m	struct:pmfs_sb_info	typeref:typename:unsigned int
+s_free_inodes_count	./pmfs_def.h	/^	__le32		s_free_inodes_count;$/;"	m	struct:pmfs_super_block	typeref:typename:__le32
+s_inode_table_offset	./pmfs_def.h	/^	__le64          s_inode_table_offset;$/;"	m	struct:pmfs_super_block	typeref:typename:__le64
+s_inodes_count	./pmfs.h	/^	unsigned int	s_inodes_count;  \/* total inodes count (used or free) *\/$/;"	m	struct:pmfs_sb_info	typeref:typename:unsigned int
+s_inodes_count	./pmfs_def.h	/^	__le32		s_inodes_count;$/;"	m	struct:pmfs_super_block	typeref:typename:__le32
+s_inodes_used_count	./pmfs.h	/^	unsigned int	s_inodes_used_count;$/;"	m	struct:pmfs_sb_info	typeref:typename:unsigned int
+s_inodes_used_count	./pmfs_def.h	/^	__le32		s_inodes_used_count;$/;"	m	struct:pmfs_super_block	typeref:typename:__le32
+s_journal_offset	./pmfs_def.h	/^	__le64          s_journal_offset;$/;"	m	struct:pmfs_super_block	typeref:typename:__le64
+s_lock	./pmfs.h	/^	struct mutex 	s_lock;	\/* protects the SB's buffer-head *\/$/;"	m	struct:pmfs_sb_info	typeref:struct:mutex
+s_magic	./pmfs_def.h	/^	__le16		s_magic;            \/* magic signature *\/$/;"	m	struct:pmfs_super_block	typeref:typename:__le16
+s_mount_opt	./pmfs.h	/^	unsigned long	s_mount_opt;$/;"	m	struct:pmfs_sb_info	typeref:typename:unsigned long
+s_mtime	./pmfs_def.h	/^	__le32		s_mtime;            \/* mount time *\/$/;"	m	struct:pmfs_super_block	typeref:typename:__le32
+s_num_blocknode_allocated	./pmfs_def.h	/^	__le64		s_num_blocknode_allocated;$/;"	m	struct:pmfs_super_block	typeref:typename:__le64
+s_num_free_blocks	./pmfs_def.h	/^	__le64		s_num_free_blocks;$/;"	m	struct:pmfs_super_block	typeref:typename:__le64
+s_size	./pmfs_def.h	/^	__le64		s_size;             \/* total size of fs in bytes *\/$/;"	m	struct:pmfs_super_block	typeref:typename:__le64
+s_start_dynamic	./pmfs_def.h	/^	__le64       s_start_dynamic; $/;"	m	struct:pmfs_super_block	typeref:typename:__le64
+s_sum	./pmfs_def.h	/^	__le16		s_sum;              \/* checksum of this sb *\/$/;"	m	struct:pmfs_super_block	typeref:typename:__le16
+s_truncate	./pmfs.h	/^	struct list_head s_truncate;$/;"	m	struct:pmfs_sb_info	typeref:struct:list_head
+s_truncate_lock	./pmfs.h	/^	struct mutex s_truncate_lock;$/;"	m	struct:pmfs_sb_info	typeref:struct:mutex
+s_volume_name	./pmfs_def.h	/^	char		s_volume_name[16];  \/* volume name *\/$/;"	m	struct:pmfs_super_block	typeref:typename:char[16]
+s_wtime	./pmfs_def.h	/^	__le32		s_wtime;            \/* write time *\/$/;"	m	struct:pmfs_super_block	typeref:typename:__le32
+set_default_opts	./super.c	/^static inline void set_default_opts(struct pmfs_sb_info *sbi)$/;"	f	typeref:typename:void	file:
+set_opt	./pmfs.h	/^#define set_opt(/;"	d
+size	./journal.h	/^	u8       size;$/;"	m	struct:__anon8c5c7c730108	typeref:typename:u8
+size	./pmfs_def.h	/^	__le32     size;$/;"	m	struct:pmfs_journal	typeref:typename:__le32
+start_addr	./journal.h	/^	pmfs_logentry_t *start_addr;$/;"	m	struct:pmfs_transaction	typeref:typename:pmfs_logentry_t *
+status	./journal.h	/^	u16              status;$/;"	m	struct:pmfs_transaction	typeref:typename:u16
+support_clwb_pmfs	./super.c	/^int support_clwb_pmfs = 0;$/;"	v	typeref:typename:int
+support_pcommit_pmfs	./super.c	/^int support_pcommit_pmfs = 0;$/;"	v	typeref:typename:int
+sync_range	./ioctl.c	/^struct sync_range$/;"	s	file:
+t_journal	./journal.h	/^	pmfs_journal_t  *t_journal;$/;"	m	struct:pmfs_transaction	typeref:typename:pmfs_journal_t *
+tail	./pmfs_def.h	/^	__le32     tail;$/;"	m	struct:pmfs_journal	typeref:typename:__le32
+test_opt	./pmfs.h	/^#define test_opt(/;"	d
+test_pmfs_write	./pmfs_test.c	/^int __init test_pmfs_write(void)$/;"	f	typeref:typename:int __init
+test_pmfs_write_cleanup	./pmfs_test.c	/^void test_pmfs_write_cleanup(void)$/;"	f	typeref:typename:void
+timing_category	./pmfs.h	/^enum timing_category {$/;"	g
+timing_t	./pmfs.h	/^typedef unsigned long timing_t;$/;"	t	typeref:typename:unsigned long
+tokens	./super.c	/^static const match_table_t tokens = {$/;"	v	typeref:typename:const match_table_t	file:
+transaction_id	./journal.h	/^	__le32   transaction_id;$/;"	m	struct:__anon8c5c7c730108	typeref:typename:__le32
+transaction_id	./journal.h	/^	u32              transaction_id;$/;"	m	struct:pmfs_transaction	typeref:typename:u32
+type	./journal.h	/^	u8       type;  \/* normal, commit, or abort *\/$/;"	m	struct:__anon8c5c7c730108	typeref:typename:u8
+uid	./pmfs.h	/^	kuid_t		uid;    \/* Mount uid for root directory *\/$/;"	m	struct:pmfs_sb_info	typeref:typename:kuid_t
+unlink_t	./pmfs.h	/^	unlink_t,$/;"	e	enum:timing_category
+vfs_inode	./pmfs.h	/^	struct inode	vfs_inode;$/;"	m	struct:pmfs_inode_info	typeref:struct:inode
+virt_addr	./pmfs.h	/^	void		*virt_addr;$/;"	m	struct:pmfs_sb_info	typeref:typename:void *
+wakeup_log_cleaner	./journal.c	/^static void wakeup_log_cleaner(struct pmfs_sb_info *sbi)$/;"	f	typeref:typename:void	file:
+wprotect_disable	./wprotect.c	/^static inline void wprotect_disable(void)$/;"	f	typeref:typename:void	file:
+wprotect_enable	./wprotect.c	/^static inline void wprotect_enable(void)$/;"	f	typeref:typename:void	file:
+xip_file_read	./xip.c	/^xip_file_read(struct file *filp, char __user *buf, size_t len, loff_t *ppos)$/;"	f	typeref:typename:ssize_t
+xip_read_t	./pmfs.h	/^	xip_read_t,$/;"	e	enum:timing_category
+xip_write_fast_t	./pmfs.h	/^	xip_write_fast_t,$/;"	e	enum:timing_category
+xip_write_t	./pmfs.h	/^	xip_write_t,$/;"	e	enum:timing_category

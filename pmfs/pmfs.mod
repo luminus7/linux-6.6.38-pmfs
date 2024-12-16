@@ -1,0 +1,13 @@
+/home/syslab/workspace_luma/DSA_project/linux-6.6.38/odinfs-module-6.6.38/pmfs/bbuild.o
+/home/syslab/workspace_luma/DSA_project/linux-6.6.38/odinfs-module-6.6.38/pmfs/balloc.o
+/home/syslab/workspace_luma/DSA_project/linux-6.6.38/odinfs-module-6.6.38/pmfs/dir.o
+/home/syslab/workspace_luma/DSA_project/linux-6.6.38/odinfs-module-6.6.38/pmfs/file.o
+/home/syslab/workspace_luma/DSA_project/linux-6.6.38/odinfs-module-6.6.38/pmfs/inode.o
+/home/syslab/workspace_luma/DSA_project/linux-6.6.38/odinfs-module-6.6.38/pmfs/namei.o
+/home/syslab/workspace_luma/DSA_project/linux-6.6.38/odinfs-module-6.6.38/pmfs/super.o
+/home/syslab/workspace_luma/DSA_project/linux-6.6.38/odinfs-module-6.6.38/pmfs/symlink.o
+/home/syslab/workspace_luma/DSA_project/linux-6.6.38/odinfs-module-6.6.38/pmfs/ioctl.o
+/home/syslab/workspace_luma/DSA_project/linux-6.6.38/odinfs-module-6.6.38/pmfs/pmfs_stats.o
+/home/syslab/workspace_luma/DSA_project/linux-6.6.38/odinfs-module-6.6.38/pmfs/journal.o
+/home/syslab/workspace_luma/DSA_project/linux-6.6.38/odinfs-module-6.6.38/pmfs/xip.o
+/home/syslab/workspace_luma/DSA_project/linux-6.6.38/odinfs-module-6.6.38/pmfs/wprotect.o

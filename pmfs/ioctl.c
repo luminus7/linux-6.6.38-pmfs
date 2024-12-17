@@ -51,7 +51,8 @@ long pmfs_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 		if (ret)
 			return ret;
 
-		if (!inode_owner_or_capable(&init_user_ns, inode)) {
+		//if (!inode_owner_or_capable(&init_user_ns, inode)) {
+		if (!inode_owner_or_capable(&nop_mnt_idmap, inode)) {	// Sangjin Luma
 			ret = -EPERM;
 			goto flags_out;
 		}
@@ -78,7 +79,8 @@ long pmfs_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 
 		flags = flags & FS_FL_USER_MODIFIABLE;
 		flags |= oldflags & ~FS_FL_USER_MODIFIABLE;
-		inode->i_ctime = current_time(inode);
+		//inode->i_ctime = current_time(inode);
+		inode_set_ctime_current(inode);				// Sangjin Luma
 		trans = pmfs_new_transaction(sb, MAX_INODE_LENTRIES);
 		if (IS_ERR(trans)) {
 			ret = PTR_ERR(trans);
@@ -87,7 +89,8 @@ long pmfs_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 		pmfs_add_logentry(sb, trans, pi, MAX_DATA_PER_LENTRY, LE_DATA);
 		pmfs_memunlock_inode(sb, pi);
 		pi->i_flags = cpu_to_le32(flags);
-		pi->i_ctime = cpu_to_le32(inode->i_ctime.tv_sec);
+		//pi->i_ctime = cpu_to_le32(inode->i_ctime.tv_sec);
+		pi->i_ctime = cpu_to_le32(inode_get_ctime_sec(inode));	// Sangjin Luma
 		pmfs_set_inode_flags(inode, pi);
 		pmfs_memlock_inode(sb, pi);
 		pmfs_commit_transaction(sb, trans);
@@ -101,7 +104,8 @@ flags_out:
 		return put_user(inode->i_generation, (int __user *)arg);
 	case FS_IOC_SETVERSION: {
 		__u32 generation;
-		if (!inode_owner_or_capable(&init_user_ns, inode))
+		//if (!inode_owner_or_capable(&init_user_ns, inode))
+		if (!inode_owner_or_capable(&nop_mnt_idmap, inode))	// Sangjin Luma
 			return -EPERM;
 		ret = mnt_want_write_file(filp);
 		if (ret)
@@ -117,10 +121,12 @@ flags_out:
 			goto out;
 		}
 		pmfs_add_logentry(sb, trans, pi, sizeof(*pi), LE_DATA);
-		inode->i_ctime = current_time(inode);
+		//inode->i_ctime = current_time(inode);
+		inode_set_ctime_current(inode);				// Sangjin Luma
 		inode->i_generation = generation;
 		pmfs_memunlock_inode(sb, pi);
-		pi->i_ctime = cpu_to_le32(inode->i_ctime.tv_sec);
+		//pi->i_ctime = cpu_to_le32(inode->i_ctime.tv_sec);
+		pi->i_ctime = cpu_to_le32(inode_get_ctime_sec(inode));	// Sangjin Luma
 		pi->i_generation = cpu_to_le32(inode->i_generation);
 		pmfs_memlock_inode(sb, pi);
 		pmfs_commit_transaction(sb, trans);

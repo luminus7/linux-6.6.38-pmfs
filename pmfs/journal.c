@@ -571,7 +571,9 @@ again:
 		tail = 0;
 		ptr = (u64 *)&journal->tail;
 		/* writing 8-bytes atomically setting tail to 0 */
-		set_64bit(ptr, (__force u64)cpu_to_le64((u64)next_gen_id(
+		//set_64bit(ptr, (__force u64)cpu_to_le64((u64)next_gen_id(
+		//			le16_to_cpu(journal->gen_id)) << 32));
+		WRITE_ONCE(*ptr, (__force u64)cpu_to_le64((u64)next_gen_id(	// Sangjin Luma
 					le16_to_cpu(journal->gen_id)) << 32));
 		pmfs_memlock_range(sb, journal, sizeof(*journal));
 		pmfs_dbg_trans("journal wrapped. tail %x gid %d cur tid %d\n",

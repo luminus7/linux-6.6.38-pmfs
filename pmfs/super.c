@@ -106,24 +106,28 @@ static int pmfs_get_block_info(struct super_block *sb,
 	void *virt_addr = NULL;
 	pfn_t __pfn_t;
 	long size;
-	int ret;
+	//int ret;
+	u64 dax_part_off;					// Sangjin Luma
 
-	ret = bdev_dax_supported(sb->s_bdev, PAGE_SIZE);
-	if (!ret) {
-		pmfs_err(sb, "device does not support DAX\n");
-		return -EINVAL;
-	}
+	/* Temporarily disabling dax support checking features : Sangjin Luma */
+	//ret = bdev_dax_supported(sb->s_bdev, PAGE_SIZE);
+	//if (!ret) {
+	//	pmfs_err(sb, "device does not support DAX\n");
+	//	return -EINVAL;
+	//}
 
 	sbi->s_bdev = sb->s_bdev;
 	/* dax_dev = fs_dax_get_by_host(sb->s_bdev->bd_disk->disk_name); */
-	dax_dev = fs_dax_get_by_bdev(sb->s_bdev);
+	//dax_dev = fs_dax_get_by_bdev(sb->s_bdev);
+	dax_dev = fs_dax_get_by_bdev(sb->s_bdev, &dax_part_off, NULL, NULL);	// Sangjin Luma
 	if (!dax_dev) {
 		pmfs_err(sb, "Couldn't retrieve DAX device\n");
 		return -EINVAL;
 	}
 
 	size = dax_direct_access(dax_dev, 0, LONG_MAX / PAGE_SIZE,
-				&virt_addr, &__pfn_t) * PAGE_SIZE;
+				//&virt_addr, &__pfn_t) * PAGE_SIZE;
+				DAX_ACCESS, &virt_addr, &__pfn_t) * PAGE_SIZE;	// Sangjin Luma
 	if (size <= 0) {
 		pmfs_err(sb, "direct_access failed\n");
 		return -EINVAL;

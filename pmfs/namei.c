@@ -227,7 +227,9 @@ static struct dentry *pmfs_lookup(struct inode *dir, struct dentry *dentry,
  * If the create succeeds, we fill in the inode information
  * with d_instantiate().
  */
-static int pmfs_create(struct user_namespace *mnt_userns, struct inode *dir,
+//static int pmfs_create(struct user_namespace *mnt_userns, struct inode *dir,
+//		       struct dentry *dentry, umode_t mode, bool excl)
+static int pmfs_create(struct mnt_idmap *idmap, struct inode *dir,		// Sangjin Luma
 		       struct dentry *dentry, umode_t mode, bool excl)
 {
 	struct inode *inode = NULL;
@@ -267,7 +269,9 @@ out_err:
 	return err;
 }
 
-static int pmfs_mknod(struct user_namespace *mnt_userns, struct inode *dir,
+//static int pmfs_mknod(struct user_namespace *mnt_userns, struct inode *dir,
+//		      struct dentry *dentry, umode_t mode, dev_t rdev)
+static int pmfs_mknod(struct mnt_idmap *idmap, struct inode *dir,		// Sangjin Luma
 		      struct dentry *dentry, umode_t mode, dev_t rdev)
 {
 	struct inode *inode = NULL;
@@ -306,7 +310,9 @@ out_err:
 	return err;
 }
 
-static int pmfs_symlink(struct user_namespace *mnt_userns, struct inode *dir,
+//static int pmfs_symlink(struct user_namespace *mnt_userns, struct inode *dir,
+//			struct dentry *dentry, const char *symname)
+static int pmfs_symlink(struct mnt_idmap *idmap, struct inode *dir,		// Sangjin Luma
 			struct dentry *dentry, const char *symname)
 {
 	struct super_block *sb = dir->i_sb;
@@ -391,11 +397,14 @@ static int pmfs_link(struct dentry *dest_dentry, struct inode *dir,
 
 	err = pmfs_add_entry(trans, dentry, inode);
 	if (!err) {
-		inode->i_ctime = current_time(inode);
+		//inode->i_ctime = current_time(inode);
+		inode_set_ctime_current(inode);				// Sangjin Luma
 		inc_nlink(inode);
 
 		pmfs_memunlock_inode(sb, pi);
-		pi->i_ctime = cpu_to_le32(inode->i_ctime.tv_sec);
+		//pi->i_ctime = cpu_to_le32(inode->i_ctime.tv_sec);
+		pi->i_ctime = cpu_to_le32(inode_get_ctime_sec(inode));	// Sangjin Luma
+
 		pi->i_links_count = cpu_to_le16(inode->i_nlink);
 		pmfs_memlock_inode(sb, pi);
 
@@ -436,14 +445,16 @@ static int pmfs_unlink(struct inode *dir, struct dentry *dentry)
 
 	if (inode->i_nlink == 1)
 		pmfs_truncate_add(inode, inode->i_size);
-	inode->i_ctime = dir->i_ctime;
+	//inode->i_ctime = dir->i_ctime;
+	inode_set_ctime_to_ts(inode, inode_get_ctime(dir));		// Sangjin Luma
 
 	pmfs_memunlock_inode(sb, pi);
 	if (inode->i_nlink) {
 		drop_nlink(inode);
 		pi->i_links_count = cpu_to_le16(inode->i_nlink);
 	}
-	pi->i_ctime = cpu_to_le32(inode->i_ctime.tv_sec);
+	//pi->i_ctime = cpu_to_le32(inode->i_ctime.tv_sec);
+	pi->i_ctime = cpu_to_le32(inode_get_ctime_sec(inode));	// Sangjin Luma
 	pmfs_memlock_inode(sb, pi);
 
 	pmfs_commit_transaction(sb, trans);
@@ -455,7 +466,9 @@ out:
 	return retval;
 }
 
-static int pmfs_mkdir(struct user_namespace *mnt_userns, struct inode *dir,
+//static int pmfs_mkdir(struct user_namespace *mnt_userns, struct inode *dir,
+//		      struct dentry *dentry, umode_t mode)
+static int pmfs_mkdir(struct mnt_idmap *idmap, struct inode *dir,		// Sangjin Luma
 		      struct dentry *dentry, umode_t mode)
 {
 	struct inode *inode;
@@ -650,11 +663,13 @@ static int pmfs_rmdir(struct inode *dir, struct dentry *dentry)
 
 	/*inode->i_version++; */
 	clear_nlink(inode);
-	inode->i_ctime = dir->i_ctime;
+	//inode->i_ctime = dir->i_ctime;
+	inode_set_ctime_to_ts(inode, inode_get_ctime(dir));		// Sangjin Luma
 
 	pmfs_memunlock_inode(sb, pi);
 	pi->i_links_count = cpu_to_le16(inode->i_nlink);
-	pi->i_ctime = cpu_to_le32(inode->i_ctime.tv_sec);
+	//pi->i_ctime = cpu_to_le32(inode->i_ctime.tv_sec);
+	pi->i_ctime = cpu_to_le32(inode_get_ctime_sec(inode));		// Sangjin Luma
 	pmfs_memlock_inode(sb, pi);
 
 	/* add the inode to truncate list in case a crash happens before the
@@ -673,7 +688,11 @@ end_rmdir:
 	return err;
 }
 
-static int pmfs_rename(struct user_namespace *mnt_userns, struct inode *old_dir,
+//static int pmfs_rename(struct user_namespace *mnt_userns, struct inode *old_dir,
+//		       struct dentry *old_dentry,
+//		       struct inode *new_dir, struct dentry *new_dentry,
+//		       unsigned int flags)
+static int pmfs_rename(struct mnt_idmap *idmap, struct inode *old_dir,	// Sangjin Luma
 		       struct dentry *old_dentry,
 		       struct inode *new_dir, struct dentry *new_dentry,
 		       unsigned int flags)
@@ -731,7 +750,8 @@ static int pmfs_rename(struct user_namespace *mnt_userns, struct inode *old_dir,
 		pmfs_add_logentry(sb, trans, new_pidir, MAX_DATA_PER_LENTRY,
 			LE_DATA);
 		/*new_dir->i_version++; */
-		new_dir->i_ctime = new_dir->i_mtime = current_time(new_dir);
+		//new_dir->i_ctime = new_dir->i_mtime = current_time(new_dir);
+		new_dir->i_mtime = inode_set_ctime_current(new_dir);		// Sangjin Luma
 		pmfs_update_time(new_dir, new_pidir);
 	}
 
@@ -743,14 +763,16 @@ static int pmfs_rename(struct user_namespace *mnt_userns, struct inode *old_dir,
 	if (new_inode) {
 		pi = pmfs_get_inode(sb, new_inode->i_ino);
 		pmfs_add_logentry(sb, trans, pi, MAX_DATA_PER_LENTRY, LE_DATA);
-		new_inode->i_ctime = current_time(new_inode);
+		//new_inode->i_ctime = current_time(new_inode);
+		inode_set_ctime_current(new_inode);			// Sangjin Luma
 
 		pmfs_memunlock_inode(sb, pi);
 		if (S_ISDIR(old_inode->i_mode)) {
 			if (new_inode->i_nlink)
 				drop_nlink(new_inode);
 		}
-		pi->i_ctime = cpu_to_le32(new_inode->i_ctime.tv_sec);
+		//pi->i_ctime = cpu_to_le32(new_inode->i_ctime.tv_sec);
+		pi->i_ctime = cpu_to_le32(inode_get_ctime_sec(new_inode));	// Sangjin Luma
 		if (new_inode->i_nlink)
 			drop_nlink(new_inode);
 		pi->i_links_count = cpu_to_le16(new_inode->i_nlink);

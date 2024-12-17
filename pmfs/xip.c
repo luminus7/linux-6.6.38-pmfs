@@ -339,7 +339,8 @@ static ssize_t pmfs_file_write_fast(struct super_block *sb, struct inode *inode,
 	if (unlikely(copied != count && copied == 0))
 		ret = -EFAULT;
 	*ppos = pos;
-	inode->i_ctime = inode->i_mtime = current_time(inode);
+	//inode->i_ctime = inode->i_mtime = current_time(inode);
+	inode->i_mtime = inode_set_ctime_current(inode);		// Sangjin Luma
 	if (pos > inode->i_size) {
 		/* make sure written data is persistent before updating
 	 	* time and size */
@@ -354,7 +355,8 @@ static ssize_t pmfs_file_write_fast(struct super_block *sb, struct inode *inode,
 		/* update c_time and m_time atomically. We don't need to make the data
 		 * persistent because the expectation is that the close() or an explicit
 		 * fsync will do that. */
-		c_m_time = (inode->i_ctime.tv_sec & 0xFFFFFFFF);
+		//c_m_time = (inode->i_ctime.tv_sec & 0xFFFFFFFF);
+		c_m_time = (inode_get_ctime_sec(inode) & 0xFFFFFFFF);	// Sangjin Luma
 		c_m_time = c_m_time | (c_m_time << 32);
 		pmfs_memunlock_inode(sb, pi);
 		pmfs_memcpy_atomic(&pi->i_ctime, &c_m_time, 8);
@@ -487,7 +489,8 @@ ssize_t pmfs_xip_file_write(struct file *filp, const char __user *buf,
 		pmfs_abort_transaction(sb, trans);
 		goto out;
 	}
-	inode->i_ctime = inode->i_mtime = current_time(inode);
+	//inode->i_ctime = inode->i_mtime = current_time(inode);
+	inode->i_mtime = inode_set_ctime_current(inode);		// Sangjin Luma
 	pmfs_update_time(inode, pi);
 
 	/* We avoid zeroing the alloc'd range, which is going to be overwritten
@@ -702,7 +705,8 @@ int pmfs_xip_file_mmap(struct file *file, struct vm_area_struct *vma)
 
 	file_accessed(file);
 
-	vma->vm_flags |= VM_MIXEDMAP;
+	//vma->vm_flags |= VM_MIXEDMAP;
+	vm_flags_set(vma, VM_MIXEDMAP);		// Sangjin Luma
 
 	vma->vm_ops = &pmfs_xip_vm_ops;
 	pmfs_dbg_mmap4k("[%s:%d] MMAP 4KPAGE vm_start(0x%lx),"

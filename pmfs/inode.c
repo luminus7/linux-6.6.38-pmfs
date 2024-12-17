@@ -1250,7 +1250,7 @@ inline void pmfs_update_time(struct inode *inode, struct pmfs_inode *pi)
 {
 	pmfs_memunlock_inode(inode->i_sb, pi);
 	//pi->i_ctime = cpu_to_le32(inode->i_ctime.tv_sec);
-	pi->i_ctime = cpu_to_le32(inode_get_ctime_sec(inode));	// Sangjin Luma
+	pi->i_ctime = cpu_to_le32(inode_get_ctime_sec(inode));		// Sangjin Luma
 	pi->i_mtime = cpu_to_le32(inode->i_mtime.tv_sec);
 	pmfs_memlock_inode(inode->i_sb, pi);
 }
@@ -1258,7 +1258,8 @@ inline void pmfs_update_time(struct inode *inode, struct pmfs_inode *pi)
 /* This function checks if VFS's inode and PMFS's inode are not in sync */
 static bool pmfs_is_inode_dirty(struct inode *inode, struct pmfs_inode *pi)
 {
-	if (inode->i_ctime.tv_sec != le32_to_cpu(pi->i_ctime) ||
+	//if (inode->i_ctime.tv_sec != le32_to_cpu(pi->i_ctime) ||
+	if (inode_get_ctime_sec(inode) != le32_to_cpu(pi->i_ctime) ||	// Sangjin Luma
 		inode->i_mtime.tv_sec != le32_to_cpu(pi->i_mtime) ||
 		inode->i_size != le64_to_cpu(pi->i_size) ||
 		inode->i_mode != le16_to_cpu(pi->i_mode) ||
@@ -1479,7 +1480,7 @@ int pmfs_getattr(struct mnt_idmap *idmap, const struct path *path,	// Sangjin Lu
 
 	inode = path->dentry->d_inode;
 	//generic_fillattr(&init_user_ns, inode, stat);
-	generic_fillattr(&nop_mnt_idmap, inode, stat);		// Sangjin Luma
+	generic_fillattr(&nop_mnt_idmap, request_mask, inode, stat);		// Sangjin Luma
 	/* stat->blocks should be the number of 512B blocks */
 	stat->blocks = (inode->i_blocks << inode->i_sb->s_blocksize_bits) >> 9;
 	return 0;
@@ -1507,7 +1508,8 @@ static int pmfs_update_single_field(struct super_block *sb, struct inode *inode,
 			pi->i_atime = cpu_to_le32(inode->i_atime.tv_sec);
 			break;
 		case ATTR_CTIME:
-			pi->i_ctime = cpu_to_le32(inode->i_ctime.tv_sec);
+			//pi->i_ctime = cpu_to_le32(inode->i_ctime.tv_sec);
+			pi->i_ctime = cpu_to_le32(inode_get_ctime_sec(inode));	// Sangjin Luma
 			break;
 		case ATTR_MTIME:
 			pi->i_mtime = cpu_to_le32(inode->i_mtime.tv_sec);
@@ -1638,7 +1640,8 @@ static ssize_t pmfs_direct_IO(struct kiocb *iocb, struct iov_iter *iter)
 	ssize_t written = 0;
 	unsigned long seg;
 	unsigned long nr_segs = iter->nr_segs;
-	const struct iovec *iv = iter->iov;
+	//const struct iovec *iv = iter->iov;
+	const struct iovec *iv = iter_iov(iter);	// Sangjin Luma
 
 	for (seg = 0; seg < nr_segs; seg++) {
 		end += iv->iov_len;
@@ -1651,7 +1654,8 @@ static ssize_t pmfs_direct_IO(struct kiocb *iocb, struct iov_iter *iter)
 		return ret;
 	}
 
-	iv = iter->iov;
+	//iv = iter->iov;
+	iv = iter_iov(iter);				// Sangjin Luma
 	for (seg = 0; seg < nr_segs; seg++) {
 		if (iov_iter_rw(iter) == READ) {
 			ret = pmfs_xip_file_read(filp, iv->iov_base,
